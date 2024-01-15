@@ -1,0 +1,13 @@
+FROM contenedoresdesafiotripulacionesg3.azurecr.io/alpinesecuredesafio:latest
+
+ENV APP_PORT=3000
+
+WORKDIR /app/server
+
+COPY . .
+
+RUN npm install
+
+EXPOSE $APP_PORT
+
+CMD ["sh", "-c", "npm start"]
