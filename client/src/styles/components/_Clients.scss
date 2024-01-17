@@ -1,0 +1,40 @@
+@import "../utils/variables.scss";
+
+.clientes {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tableContainer {
+  //   width: 1440px;
+  height: 1024px;
+  background: var(--background-mode, #fff);
+}
+
+.tableBody {
+  // display: flex;
+  //   width: 1331px;
+  //   height: 72px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  background: #f0f0f0;
+}
+
+.tableHead {
+  gap: 136px;
+}
+
+.tableTitle {
+  color: var(--several-grises-50, #999);
+  font-feature-settings: "clig" off, "liga" off;
+  /* H3 */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 240px;
+}

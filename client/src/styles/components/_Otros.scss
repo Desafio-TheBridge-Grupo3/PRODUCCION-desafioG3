@@ -1,0 +1,73 @@
+@import '../utils/variables.scss';
+
+.otros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-width: 401px;
+    max-width: 401px;
+
+    &>label,
+    input {
+        display: flex;
+        width: 160px;
+        padding: 8px;
+        align-items: center;
+        margin: 8px;
+        border-radius: 4px;
+        flex-direction: row;
+    }
+}
+
+
+
+.cotros {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px 0;
+    margin-bottom: 20px;
+}
+
+
+.subseccion {
+    display: flex;
+    padding: 0px 13.116px;
+    align-items: center;
+    min-width: 1400px;
+    max-width: 1400px;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    text-align: end;
+    position: relative;
+    right: 65px;
+}
+
+.resultadosTotales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 235px;
+    max-width: 235px;
+}
+
+
+.totfac {
+    width: 200px;
+    color: $bright;
+    font-size: larger;
+}
+
+.totan {
+    width: 200px;
+    color:$heavy;
+    font-size: larger;
+}
+
+#iva{
+    border: none;
+    background: $cell;
+    max-width: 70px;
+    color: $text;
+    cursor: pointer;
+}

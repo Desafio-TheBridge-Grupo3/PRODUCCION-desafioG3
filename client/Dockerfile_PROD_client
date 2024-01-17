@@ -1,0 +1,15 @@
+FROM contenedoresPRODUCCIONseveral.azurecr.io/imagenalpinesegura:PROD
+
+ENV APP_PORT=5173
+
+WORKDIR /app/client
+
+COPY ./client .
+
+RUN npm install
+
+EXPOSE $APP_PORT
+
+HEALTHCHECK CMD curl --fail http://localhost:$APP_PORT || exit
+
+CMD ["sh", "-c", "npm run dev -- --port $APP_PORT --host 0.0.0.0"]

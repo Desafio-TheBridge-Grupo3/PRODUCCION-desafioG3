@@ -1,0 +1,118 @@
+@import "../utils/variables.scss";
+
+.mb-3 {
+  text-align: left;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.loginTitle {
+  color: #000;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin-left: 200px;
+}
+
+#formBasicEmail {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.login-input {
+  display: flex;
+  width: 348px;
+  max-width: 348px;
+  height: 48px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1.5px solid $boton;
+  opacity: 0.62;
+}
+
+.login-label {
+  text-align: left;
+  color: $bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  /* 125% */
+  margin-left: 200px;
+}
+
+#login-userContainer {
+  margin-top: 111px;
+}
+
+#login-pwdContainer {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 23px auto 59px;
+}
+
+#login-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin: 0;
+}
+
+#login-submitButton {
+  display: flex;
+  width: 400px;
+  height: 44px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background-color: $red;
+  color: $background;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  border: none;
+  margin: 0 auto;
+  
+  &:hover {
+    background-color: $botonHover;
+  }
+  &:active {
+    background-color: $botonPresion;
+  }
+}
+
+#login-formArticle {
+  width: 100%;
+  height: 100%;
+}
+
+#login-formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 300px;
+}
+
+#login-showPwdLabel {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 44px;
+  right: 21px;
+}
+
+#login-showPwdInput {
+  display: none;
+}

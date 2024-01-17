@@ -1,0 +1,77 @@
+@import '../utils/variables.scss';
+
+.options {
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 700px;
+    background-color: $white;
+}
+.options {
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 700px;
+    background-color: $white;
+}
+
+.label {
+    border-radius: 4px;
+    background: var(--several-principal-60, #DEB2B3);
+    min-width: 100px;
+    max-width: 100px;
+    height: 72px;
+    padding: 8px;
+    align-items: center;
+    margin: 8px;
+
+}
+
+.select {
+    border-radius: 4px;
+    background: $background;
+    min-width: 110px;
+    max-width: 115px;
+    height: 50px !important;
+    padding: 0 !important;
+    padding-left: 8px !important;
+    flex-direction: row !important;
+    align-items: center;
+    margin: 8px;
+    border: none;
+}
+
+
+
+.formChart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1387.537px;
+    min-width: 1387.537px;
+    align-items: end;
+    gap: 280px;
+    margin-bottom: 70px;
+  }
+  
+
+  #chartsComponent {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    align-items: flex-end;
+    gap: 60px;
+  }
+  
+  #actual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: flex-start;
+  //   gap: 0.546px;
+  }
+  
+  #anual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: flex-start;
+  //   gap: 0.546px;
+  }

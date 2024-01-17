@@ -1,0 +1,19 @@
+@import '../utils/variables.scss';
+
+#root {
+    text-align: center;
+    justify-content: center;
+    font-family: lato;
+    font-size: 95%;
+    margin:0px auto;
+    min-height: 100vh;
+    min-width: 1540px !important;
+    max-width: 1540px !important;
+    background-color: $background;
+}
+
+
+@font-face {
+    font-family: "lato";
+    src: url("/src/assets/font.ttf");
+}

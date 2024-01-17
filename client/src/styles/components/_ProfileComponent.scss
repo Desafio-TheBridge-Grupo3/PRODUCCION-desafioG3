@@ -1,0 +1,136 @@
+@import "../utils/variables.scss";
+
+main {
+  height: 1024px;
+}
+
+.userContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 88px;
+}
+
+h1 {
+  color: var(--several-grises-80, #333);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px;
+  /* 114.286% */
+}
+
+h3 {
+  color: var(--several-grises-70, #4d4d4d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  /* 120% */
+}
+
+.newProposal {
+  display: flex;
+  width: 442px;
+  // height: 248px;
+  padding: 16px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 18px;
+  border: 2px dashed var(--several-grises-50, #999);
+  background: var(--several-grises-10, #fbf9f9);
+}
+
+.addIcon {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 16px 16px 17px 17px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--several-principal-80, #d94043);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $insertarHover;
+  }
+
+  &:active {
+    background-color: $insertarPresion;
+  }
+}
+
+.card {
+  border-radius: 18px;
+  background: var(--background-mode, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 382px;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  color: var(--several-grises-70, #4d4d4d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.id {
+  width: 300px;
+  height: 31px;
+  position: absolute;
+  // right: 20px;
+  // bottom: 5px;
+  color: var(--several-principal-120, #891012);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  /* 83.333% */
+  justify-content: flex-end;
+}
+
+.cardsContainer {
+  display: flex;
+  // width: 800px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 31px 36px;
+  flex-wrap: wrap;
+}
+
+.lastProposals {
+  display: flex;
+  // width: 1264px;
+  // height: 352px;
+  padding: 16px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 18px;
+  background: var(--several-principal-0, #fbf9f9);
+}
