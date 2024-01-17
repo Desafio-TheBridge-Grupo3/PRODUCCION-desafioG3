@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Franja from "./Franja"
 import Energia from "./Energia"
@@ -8,17 +8,30 @@ import COtros from './COtros'
 
 const TablaCliente = () => {
 
+  const [logo, setLogo] = useState("src/assets/endesa.png")
+
+  const updateLogo = (event) => {
+    setLogo(event.target.value)
+    console.log(event.target.value)
+  };
+
+
   return (
     <>
       <section className="tablaGrande">
-        <article className="compañia" >
+        <article  >
+          
           <h1 className="tituloTabla">Compañía actual</h1>
-          <select name="compañia" id="compañia">
-            <option value="endesa">Endesa</option>
-            <option value="iberdrola">Iberdrola</option>
-            <option value="naturgy">Naturgy</option>
-            <option value="acciona">Acciona</option>
+          <select name="compañia" id="compañia" onChange={(event) => updateLogo(event)}>
+            <option value="src\assets\endesa.png">Endesa</option>
+            <option value="src\assets\iberdrola_logo.png">Iberdrola</option>
+            <option value="src\assets\candela.png">Candela</option>
+            <option value="src\assets\acciona.png">Acciona</option>
           </select>
+
+        </article>
+        <article >
+        <img src={logo} alt="" />
         </article>
 
         <article className="tabla">

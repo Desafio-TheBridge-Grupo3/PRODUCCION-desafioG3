@@ -1,0 +1,68 @@
+[
+    {
+        "success": true,
+        "data": {
+            "cia": "AEQ",
+            "zone": "C",
+            "rate": "2.0TD",
+            "product_cia": "ARMONIA",
+            "market": "I",
+            "pow_price_P1": "0.071803",
+            "pow_price_P2": "0.005528",
+            "pow_price_P3": "0.0",
+            "pow_price_P4": "0.0",
+            "pow_price_P5": "0.0",
+            "pow_price_P6": "0.0",
+            "con_price_P1": 0.252067,
+            "con_price_P2": 0.19791,
+            "con_price_P3": 0.14177,
+            "con_price_P4": 0,
+            "con_price_P5": 0,
+            "con_price_P6": 0
+        }
+    },
+    {
+        "success": true,
+        "data": {
+            "cia": "CANDELA",
+            "zone": "P",
+            "rate": "6.1TD",
+            "product_cia": "LUMEN",
+            "market": "I",
+            "pow_price_P1": "0.07078141095890411",
+            "pow_price_P2": "0.06222240547945205",
+            "pow_price_P3": "0.03615775890410959",
+            "pow_price_P4": "0.031316882191780825",
+            "pow_price_P5": "0.013092008219178082",
+            "pow_price_P6": "0.011010843835616438",
+            "con_price_P1": 0.32868274571600625,
+            "con_price_P2": 0.2996994825238978,
+            "con_price_P3": 0,
+            "con_price_P4": 0,
+            "con_price_P5": 0,
+            "con_price_P6": 0.25989521507906377
+        }
+    },
+    {
+        "success": true,
+        "data": {
+            "cia": "ACCIONA",
+            "zone": "B",
+            "rate": "2.0TD",
+            "product_cia": "LEVANTE+",
+            "market": "I",
+            "pow_price_P1": "0.08264120547945206",
+            "pow_price_P2": "0.014090767123287672",
+            "pow_price_P3": "0.0",
+            "pow_price_P4": "0.0",
+            "pow_price_P5": "0.0",
+            "pow_price_P6": "0.0",
+            "con_price_P1": "0.22803309898000002",
+            "con_price_P2": "0.18122208578",
+            "con_price_P3": "0.15794595655",
+            "con_price_P4": "0",
+            "con_price_P5": "0",
+            "con_price_P6": "0"
+        }
+    }
+]
