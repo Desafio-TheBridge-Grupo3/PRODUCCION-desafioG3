@@ -1,13 +1,16 @@
 import React from "react";
+import { useContext } from "react";
+import { UserContext } from "../../context/UserContext";
 
 const Header = () => {
 
+  const { signOut} = useContext(UserContext);
 
-  //crear lógica para que el Header solo se muestre cuando hay un usuario loggeado. Ver proyecto FS Cris
   return (
     <>
     <header>
     <img src="src\assets\logo.png" alt="Logo several" id="logo"/>
+    <button id="logout" onClick={signOut}><p>Logout</p></button>
     </header>
     </>
   )

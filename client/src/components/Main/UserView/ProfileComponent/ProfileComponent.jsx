@@ -10,7 +10,7 @@ const ProfileComponent = () => {
     </h1>
     <section className="newProposal">
     <h3>Crear nueva propuesta</h3>
-    <a href="/carga"><img src="./img/addIcon.png" className="addIcon"/></a>
+    <a href="/metodo"><img src="./img/addIcon.png" className="addIcon"/></a>
     </section>
     <section className="lastProposals">
     <h1>Últimas propuestas</h1>

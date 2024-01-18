@@ -37,7 +37,7 @@ const handleFile = async()=>{
   selectedFile,
   {
     headers: { "Content-Type": selectedFile.type },
-    withCredentials: true,
+    
   }
   )
   console.log(res)

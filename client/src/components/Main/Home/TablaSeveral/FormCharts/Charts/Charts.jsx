@@ -18,7 +18,6 @@ const Charts = () => {
 
   const porcentajeFixed1 = porcentajeActual.toFixed(0)
   const porcentajeFixed2 = porcentajeAnual.toFixed(0)
-  console.log(porcentajeFixed1);
 
   return (
     <>

@@ -1,11 +1,16 @@
 import React from "react";
-import { useContext, useState } from 'react';
-import { usePDF } from 'react-to-pdf';
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import TablaCliente from "./TablaCliente";
 import TablaSeveral from "./TablaSeveral";
-import { MacroContext } from "../../../context/MacroContext"
+import { MacroContext } from "../../../context/MacroContext";
 
 const Home = () => {
+
+  const navigate = useNavigate()
+  const generarPDF = () => {
+    navigate("/pdf");
+  };
 
   const [tablaCliente, setTablaCliente] = useState(
     {
@@ -150,14 +155,13 @@ const Home = () => {
   })
 
   const [preciosPotencia, setPreciosPotencia] = useState({
-      P1: 0,
-      P2: 0,
-      P3: 0,
-      P4: 0,
-      P5: 0,
-      P6: 0
-    }
-  )
+    P1: 0,
+    P2: 0,
+    P3: 0,
+    P4: 0,
+    P5: 0,
+    P6: 0,
+  })
 
 
   const updateTablaCliente = (newTotalesCliente) => {
@@ -189,6 +193,9 @@ const Home = () => {
             <TablaCliente />
             <TablaSeveral />
           </MacroContext.Provider>
+          <article className="btnContainer">
+            <button className="btnPDF" onClick={generarPDF}>Generar PDF</button>
+          </article>
         </section>
       </section>
     </>

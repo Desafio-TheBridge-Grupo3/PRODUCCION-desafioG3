@@ -1,0 +1,358 @@
+#logo {
+  max-width: 161px;
+  min-width: 161px;
+  max-height: 39px;
+}
+
+#headerPDF {
+  display: flex;
+  min-width: 1440px;
+  max-width: 1440px;
+  height: 88px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: $red;
+}
+
+#main {
+  display: flex;
+  width: 1440px !important;
+  height: max-content;
+  padding-bottom: 27.71px;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  background: $white;
+}
+
+#top {
+  display: flex;
+  flex-direction: row;
+}
+
+.campitos {
+  max-width: 300px;
+}
+
+#topLeft {
+  display: flex;
+  width: 720px;
+  //   height: 141.29px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  //   gap: 14px;
+  padding: 20px;
+}
+
+#nombreAsesor {
+  color: var(--several-principal-100, #c6171a);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#emailAsesor {
+  color: var(--several-grises-70, #4d4d4d);
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: -20px;
+}
+
+#infoContainer {
+  width: 660px;
+  display: flex;
+  padding: 8px;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 18px;
+  background: $background;
+  gap: 40px;
+}
+
+#titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.t1 {
+  color: $botonPresion;
+  font-family: Lato;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 200% */
+}
+
+#informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.t2 {
+  color: $bold;
+  font-family: Lato;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 200% */
+}
+
+#topRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 720px;
+  margin-top: 30px;
+}
+
+#graphContainer {
+  display: flex;
+  padding: 8px;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#graphTitle {
+  color: var(--several-principal-100, #c6171a);
+  font-family: Lato;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+
+.proposal {
+  color: var(--several-principal-100, #c6171a);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.36px;
+}
+
+.factura {
+  display: flex;
+  padding: 20px;
+  //   margin: 10px;
+  width: 300px;
+  height: 250px;
+  flex-direction: column;
+  border-radius: 18px;
+  background: var(--several-grises-20, #e6e6e6);
+}
+
+.proposal {
+  color: var(--several-principal-100, #c6171a);
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.36px;
+}
+
+#middle {
+  display: flex;
+  width: 1380px;
+  padding: 20px;
+  margin: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-radius: 18px;
+  background: var(--several-principal-0, #fbf9f9);
+}
+
+#middleTitle {
+  display: flex;
+  width: 1350px;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.mTitle {
+  color: var(--several-grises-70, #4d4d4d);
+  text-align: center;
+  font-family: Lato;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+
+.mTitle2 {
+  color: var(--several-grises-70, #4d4d4d);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 200% */
+}
+
+#middleTabla {
+  display: flex;
+  padding: 16px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 18px;
+  background: var(--background-mode, #fff);
+}
+
+.facturaActual {
+  gap: 4px;
+  background: var(--background-mode, #fff);
+}
+
+.typeInput {
+  display: flex;
+  width: 400px;
+  height: 16px;
+  align-items: center;
+  color: var(--several-principal-60, #d77d7f);
+
+  /* PDF_8 */
+  font-family: Lato;
+  // font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; /* 125% */
+}
+
+
+
+.inputPeriodo {
+  //   display: flex;
+  width: 165px;
+  height: 16px;
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   align-items: center;
+  color: var(--several-grises-70, #4d4d4d);
+
+  /* PDF_8 */
+  font-family: Lato;
+  //   font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; /* 125% */
+}
+
+.conclusionesFactura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  width: 1250px;
+  gap: 40 px;
+}
+
+.totalOferta {
+  display: flex;
+  width: 1325px;
+  padding: 0px 24px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  background-color: $background;
+}
+
+.totalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.totalTitulo {
+  color: var(--several-grises-70, #4d4d4d);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px; /* 166.667% */
+}
+
+.totalNum {
+  color: var(--several-principal-100, #c6171a);
+  font-family: Lato;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+#bottom {
+  display: flex;
+  width: 1380px;
+  padding: 20px;
+  margin: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-radius: 18px;
+  background: var(--several-principal-0, #fbf9f9);
+}
+
+#bottomTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
+}
+
+#aclaracion {
+  display: flex;
+  width: 1350px;
+  text-align: start;
+  margin-top: 15px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: end;
+    width: 1350px;
+}
+
+.btnPDF {
+  display: flex;
+  width: 291.279px;
+  height: 67.765px;
+  margin-top: 20px;
+  padding: 8.744px 13.116px;
+  justify-content: center;
+  align-items: center;
+  gap: 13.116px;
+  border-radius: 6.558px;
+  background: $boton;
+  color: $background;
+  text-align: center;
+  font-family: Lato;
+  font-size: 13.116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17.488px; /* 133.333% */
+  cursor: pointer;
+
+  &:hover{
+    background-color: $botonHover;
+  }
+
+  &:active{
+    background-color: $botonPresion;
+  }
+}

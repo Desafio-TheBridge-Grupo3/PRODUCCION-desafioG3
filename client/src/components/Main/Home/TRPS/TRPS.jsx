@@ -1,15 +1,17 @@
 import { useContext } from "react";
 import React, { useEffect, useState } from "react";
 import { MacroContext } from "../../../../context/MacroContext";
+
+
 const TRPS = ({ periodo }) => {
-
-  
-  const [totalPagoFactura, setTotalPagoFactura] = useState([])
-  const [totalPagoAnual, setTotalPagoAnual] = useState([])
-
 
 
   const {otros, tablaCliente, tablaSeveral, preciosPotencia, updateTablaSeveral } = useContext(MacroContext);
+
+   
+  const [totalPagoFactura, setTotalPagoFactura] = useState([])
+  const [totalPagoAnual, setTotalPagoAnual] = useState([])
+
 
 
   //multiplicaciones en cada fila

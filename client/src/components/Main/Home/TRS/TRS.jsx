@@ -8,9 +8,7 @@ const TRS = ({ periodo }) => {
   const [totalPagoFactura, setTotalPagoFactura] = useState([])
   const [totalPagoAnual, setTotalPagoAnual] = useState([])
 
-  const update = (event, setter) => {
-    setter(Number(event.target.value))
-  }
+  
 
   const { tablaCliente, tablaSeveral, updateTablaSeveral, preciosEnergia } = useContext(MacroContext);
 

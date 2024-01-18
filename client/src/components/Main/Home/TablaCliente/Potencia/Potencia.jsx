@@ -7,6 +7,8 @@ import { MacroContext } from "../../../../../context/MacroContext";
 const Potencia = () => {
 
   const { tablaCliente, updateTablaCliente } = useContext(MacroContext);
+
+  
   const [totalPotenciaFacturaC, setTotalPotenciaFacturaC] = useState(0)
   const [totalPotenciaAnualC, setTotalPotenciaAnualC] = useState(0)
 
