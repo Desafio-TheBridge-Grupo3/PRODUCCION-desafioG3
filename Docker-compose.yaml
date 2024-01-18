@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  server:
+    image: contenedoresdesafiotripulacionesg3.azurecr.io/clientseveralcalculadora:dev.231
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - several-network
+      - several-db-network
+    link:
+
+
+  client:
+    depends_on:
+      - server
+    image: contenedoresdesafiotripulacionesg3.azurecr.io/clientseveralcalculadora:dev.231
+    restart: always
+    ports:
+      - 5173:5173
+    networks:
+      - several-network
+    environment:
+      VITE_SERVER_URL: server
