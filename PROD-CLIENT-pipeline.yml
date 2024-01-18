@@ -14,19 +14,26 @@ resources:
 - repo: self
 
 variables:
-  # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'CAMBIAR'
-  imageRepository: 'clientproduccion'
-  registryname: 'contenedoresPRODUCCIONseveral'
+
+  # VARIABLES ENTRE PIPELINES
+  # ---------------------------------------------------------------------------
+  DEPLOY-STAGE: 'prod'
+  API-TO-DEPLOY: 'client'
+  # ---------------------------------------------------------------------------
+
+# Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: ''
+  imageRepository: '$(API-TO-DEPLOY)-severalapp'
+  registryname: 'severalcontainers-$(DEPLOY-STAGE)'
   containerRegistry: '$(registryname).azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/WS-candela/Dockerfile_candela'
-  tag: '$(Build.BuildId)'
+  dockerfilePath: '**/$(API-TO-DEPLOY)/Dockerfile_client'
+  tag: '$(DEPLOY-STAGE).$(Build.BuildId)'
 
   # Container Apps Variables
   azureSubscription: 'conexion-azure-cloud'
-  resourceGroup: 'RECURSOS-desafiotripulacionesG3'
-  containerAppEnvironment: 'PRODUCCION-env-app-several'
-  containerAppName: 'PRODUCCION-client-several'
+  resourceGroup: 'RECURSOS-severalenergy-$(DEPLOY-STAGE)'
+  containerAppEnvironment: 'containerenvironment-severalenergy-$(DEPLOY-STAGE)'
+  containerAppName: '$(API-TO-DEPLOY)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -40,6 +47,8 @@ stages:
     pool:
       vmImage: $(vmImageName)
     steps:
+
+    # Tarea que contenedoriza el código de
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
@@ -49,6 +58,8 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+
+    # Tarea que crea una nueva revisión de la Api contenedorizada
     - task: AzureContainerApps@1
       displayName: Update Container App
       inputs:
